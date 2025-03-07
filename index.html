@@ -4,18 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SheCodes the Weather</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
-<link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="weather-card">
       <header class="weather-header">
-        
         <form class="form-input">
-          <input type="search" placeholder="Enter city... " required class="search-input" id="search-input"/>
-          <input type="submit" value="Search" name="" id="" class="submit-button"/>
+          <input
+            type="search"
+            placeholder="Enter city... "
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            name=""
+            id=""
+            class="submit-button"
+          />
         </form>
         <img src="img/logo.png" class="shecodes-logo" alt="SheCodes Logo" />
       </header>
@@ -25,28 +41,33 @@
             <h1 id="city-name">Tucson</h1>
             <p>
               Thursday 21:00, windy<br />
-              <span class="weather-details">Humidity: <strong>15%</strong>, Wind Speed: <strong>20 km/h</strong>
-            </span></p>
+              <span class="weather-details"
+                >Humidity: <strong>15%</strong>, Wind Speed:
+                <strong>20 km/h</strong>
+              </span>
+            </p>
           </div>
-      <div class="weather-temp"><img src="" alt="api weather icon" />
-      <span class="temp-num">15</span><span class="temp-type">°C</span>
-      </div>
-      </div>  
+          <div class="weather-temp">
+            <img src="" alt="api weather icon" />
+            <span class="temp-num">15</span><span class="temp-type">°C</span>
+          </div>
+        </div>
       </main>
       <footer>
         <p>
-        Coded by
-        <a href="https://github.com/jpcreativeworks?tab=repositories"
-          >Jenn Bencriscutto</a
-        >, check out the code on
-        <a href="https://github.com/jpcreativeworks/shecodes-the-weather.git"
-          >GitHub</a
-        >, thanks <a href="https://shecodes-the-weather.netlify.app/">Netlify</a> for hosting!
+          Coded by
+          <a href="https://github.com/jpcreativeworks?tab=repositories"
+            >Jenn Bencriscutto</a
+          >, check out the code on
+          <a href="https://github.com/jpcreativeworks/shecodes-the-weather.git"
+            >GitHub</a
+          >, thanks
+          <a href="https://shecodes-the-weather.netlify.app/">Netlify</a> for
+          hosting!
         </p>
       </footer>
     </div>
   </body>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</script>
+  <!--script closing tag-->
   <script src="src/script.js"></script>
 </html>
