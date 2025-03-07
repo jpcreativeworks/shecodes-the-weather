@@ -1,11 +1,19 @@
 /* 🌞 Day Mode */
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 body {
   background: linear-gradient(
     109.6deg,
     rgb(255, 207, 84) 11.2%,
     rgb(255, 158, 27) 91.1%
   );
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   font-size: 125%;
   font-family: "Josefin Sans", sans-serif;
@@ -44,10 +52,6 @@ body {
   right: 40px;
   height: auto;
   max-width: 15%;
-  /*display: flex;
-  justify-content: space-between;
-  
-  margin-left: 20px;*/
 }
 .search-input {
   background-color: rgb(255, 220, 132);
@@ -94,7 +98,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.weather-details {
+  font-size: smaller;
+}
 .weather-info p {
   margin: -20px 0 10px 0;
   font-weight: 100;
@@ -129,4 +135,54 @@ a {
 
 a:visited {
   color: rgb(239, 186, 83);
+}
+
+/* 🌙 Night Mode*/
+/* this mode will automatically apply after sundown, 
+comeback later to see it in action!*/
+
+.night-mode {
+  background: linear-gradient(
+    -143deg,
+    rgb(21, 13, 107) 1.1%,
+    rgb(188, 16, 80) 130.5%
+  );
+  color: black;
+}
+
+.night-mode .weather-card {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.night-mode .search-input {
+  background-color: rgb(21, 13, 107); /*#8f6aae;*/
+}
+
+.night-mode .search-input::placeholder {
+  color: rgb(176, 172, 224);
+}
+
+.night-mode .search-input:focus {
+  color: white;
+}
+.night-mode .submit-button {
+  background: linear-gradient(
+    to top,
+    #fcc5e4 0%,
+    #fda34b 15%,
+    #ff7882 35%,
+    #c8699e 52%,
+    #7046aa 71%,
+    #0c1db8 87%,
+    #020f75 100%
+  );
+}
+
+.night-mode strong,
+.night-mode a {
+  color: #7046aa;
+}
+
+.night-mode a:visited {
+  color: #020f75;
 }
