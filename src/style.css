@@ -1,0 +1,78 @@
+/* 🌞 Day Mode */
+
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 207, 84) 11.2%,
+    rgb(255, 158, 27) 91.1%
+  );
+  color: white;
+  font-size: 125%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.weather-card {
+  background: linear-gradient(
+    68.2deg,
+    rgb(7, 3, 98) -0.1%,
+    rgb(179, 26, 132) 47.7%,
+    rgb(239, 186, 83) 100.2%
+  );
+  max-width: 600px;
+  margin: 45px auto;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0, 40px, 50px, rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-input {
+  background-color: rgb(255, 220, 132);
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.submit-button {
+  background: linear-gradient(
+    to top,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.weather-content,
+.form-input {
+  justify-content: space-between;
+}
+.shecodes-logo {
+  max-width: 10%;
+  margin-left: 20px;
+}
+
+strong,
+a {
+  color: rgb(255, 158, 27);
+}
+
+a:visited {
+  color: rgb(239, 186, 83);
+}

@@ -4,34 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SheCodes the Weather</title>
-    <link rel="stylesheet" href="src/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="src/style.css">
   </head>
   <body>
-    <div>
+    <div class="weather-card">
       <header>
-        <img src="img/logo.png" alt="SheCodes Logo" />
-        <form action="">
-          <input type="search" placeholder="Enter city... " />
-          <input type="submit" value="Search" name="" id="" />
+        <img src="img/logo.png" class="shecodes-logo" alt="SheCodes Logo" />
+        <form class="form-input">
+          <input type="search" placeholder="Enter city... " required class="search-input"/>
+          <input type="submit" value="Search" name="" id="" class="submit-button"/>
         </form>
       </header>
       <main>
+        <div class="weather-content">
         <h1>Tucson</h1>
         <p>
           Thursday 21:00, windy<br />
           Humidity: <strong>15%</strong>, Wind Speed: <strong>20 km/h</strong>
         </p>
-        <p><img src="" alt="weather icon" />15°C</p>
+        <p><img src="" alt="api weather icon" />15°C</p>
+        </div>
       </main>
       <footer>
         Coded by
         <a href="https://github.com/jpcreativeworks?tab=repositories"
           >Jenn Bencriscutto</a
-        >, check out the code on <a href="">GitHub</a>, thanks Netlify for
-        hosting!
+        >, check out the code on
+        <a href="https://github.com/jpcreativeworks/shecodes-the-weather.git"
+          >GitHub</a
+        >, thanks <a href="https://shecodes-the-weather.netlify.app/">Netlify</a> for hosting!
       </footer>
     </div>
   </body>
-  <script></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</script>
   <script src="src/script.js"></script>
 </html>
