@@ -11,24 +11,30 @@
   </head>
   <body>
     <div class="weather-card">
-      <header>
-        <img src="img/logo.png" class="shecodes-logo" alt="SheCodes Logo" />
+      <header class="weather-header">
+        
         <form class="form-input">
           <input type="search" placeholder="Enter city... " required class="search-input"/>
           <input type="submit" value="Search" name="" id="" class="submit-button"/>
         </form>
+        <img src="img/logo.png" class="shecodes-logo" alt="SheCodes Logo" />
       </header>
       <main>
         <div class="weather-content">
-        <h1>Tucson</h1>
-        <p>
-          Thursday 21:00, windy<br />
-          Humidity: <strong>15%</strong>, Wind Speed: <strong>20 km/h</strong>
-        </p>
-        <p><img src="" alt="api weather icon" />15°C</p>
-        </div>
+          <div class="weather-info">
+            <h1>Tucson</h1>
+            <p>
+              Thursday 21:00, windy<br />
+              Humidity: <strong>15%</strong>, Wind Speed: <strong>20 km/h</strong>
+            </p>
+          </div>
+      <div class="weather-temp"><img src="" alt="api weather icon" />
+      <span class="temp-num">15</span><span class="temp-type">°C</span>
+      </div>
+      </div>  
       </main>
       <footer>
+        <p>
         Coded by
         <a href="https://github.com/jpcreativeworks?tab=repositories"
           >Jenn Bencriscutto</a
@@ -36,6 +42,7 @@
         <a href="https://github.com/jpcreativeworks/shecodes-the-weather.git"
           >GitHub</a
         >, thanks <a href="https://shecodes-the-weather.netlify.app/">Netlify</a> for hosting!
+        </p>
       </footer>
     </div>
   </body>

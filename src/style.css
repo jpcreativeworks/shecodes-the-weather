@@ -30,7 +30,25 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(7, 3, 98, 0.386);
+  padding: 0, 0, 0, 5px;
+}
 
+.shecodes-logo {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  height: auto;
+  max-width: 15%;
+  /*display: flex;
+  justify-content: space-between;
+  
+  margin-left: 20px;*/
+}
 .search-input {
   background-color: rgb(255, 220, 132);
   border: none;
@@ -58,16 +76,52 @@ body {
   border-radius: 6px;
   color: white;
 }
-
-.weather-content,
 .form-input {
-  justify-content: space-between;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin: 20px auto;
 }
-.shecodes-logo {
-  max-width: 10%;
-  margin-left: 20px;
+.weather-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-info {
+  display: flex;
+  flex-direction: column;
 }
 
+.weather-info p {
+  margin: -20px 0 10px 0;
+  font-weight: 100;
+}
+.weather-temp {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+}
+.temp-num {
+  font-size: 80px;
+  font-weight: 500px;
+}
+.temp-type {
+  font-size: 30px;
+  margin-top: -36px;
+}
+
+footer {
+  border-top: 1px solid rgba(39, 2, 74, 0.386);
+  text-align: center;
+  font-size: 12px;
+}
+footer p {
+  padding: 25px, 0, 5px, 0;
+}
 strong,
 a {
   color: rgb(255, 158, 27);
