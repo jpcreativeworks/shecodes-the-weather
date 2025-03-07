@@ -9,12 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
 <link rel="stylesheet" href="src/style.css">
   </head>
-  <body class="night-mode">
+  <body>
     <div class="weather-card">
       <header class="weather-header">
         
         <form class="form-input">
-          <input type="search" placeholder="Enter city... " required class="search-input"/>
+          <input type="search" placeholder="Enter city... " required class="search-input" id="search-input"/>
           <input type="submit" value="Search" name="" id="" class="submit-button"/>
         </form>
         <img src="img/logo.png" class="shecodes-logo" alt="SheCodes Logo" />
@@ -22,7 +22,7 @@
       <main>
         <div class="weather-content">
           <div class="weather-info">
-            <h1>Tucson</h1>
+            <h1 id="city-name">Tucson</h1>
             <p>
               Thursday 21:00, windy<br />
               <span class="weather-details">Humidity: <strong>15%</strong>, Wind Speed: <strong>20 km/h</strong>
