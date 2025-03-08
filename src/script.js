@@ -16,6 +16,47 @@ function updateWeather(response) {
   // console.log(response.data.temperature.current);
 }
 
+function updateTimeAndTheme() {
+  let now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let dayIndex = now.getDay();
+
+  let amPm;
+  if (hours >= 12) {
+    amPm = "PM";
+  } else {
+    amPm = "AM";
+  }
+  if (hours === 0) {
+    hours = 12;
+  } else if (hours > 12) {
+    hours = hours % 12;
+  }
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  let daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = daysOfWeek[dayIndex];
+
+  let formattedTime = `${day} ${hours}:${minutes} ${amPm}`;
+
+  document.querySelector("#current-time").innerHTML = formattedTime;
+}
+
+updateTimeAndTheme();
+setInterval(updateTimeAndTheme, 60000);
+
 function searchCity(city) {
   // make api call and update interface
   let apiKey = "7fd5430a29oa8949b4d239de06t9a3d4";
