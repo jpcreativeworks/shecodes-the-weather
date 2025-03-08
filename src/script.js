@@ -52,6 +52,17 @@ function updateTimeAndTheme() {
   let formattedTime = `${day} ${hours}:${minutes} ${amPm}`;
 
   document.querySelector("#current-time").innerHTML = formattedTime;
+
+  let body = document.querySelector("body");
+  if (now.getHours() >= 7 && now.getHours() < 18) {
+    // Day Mode
+    body.classList.remove("night-mode");
+    body.classList.add("day-mode");
+  } else {
+    // Night Mode
+    body.classList.remove("day-mode");
+    body.classList.add("night-mode");
+  }
 }
 
 updateTimeAndTheme();
