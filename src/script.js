@@ -6,6 +6,9 @@ function updateWeather(response) {
   let weatherHumidity = document.querySelector("#humidity");
   let weatherWind = document.querySelector("#wind");
   let weatherWindSpeed = response.data.wind.speed;
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="api weather icon" class="weather-app-icon" />`;
   console.log(response.data);
 
   cityName.innerHTML = response.data.city;
@@ -54,14 +57,19 @@ function updateTimeAndTheme() {
   document.querySelector("#current-time").innerHTML = formattedTime;
 
   let body = document.querySelector("body");
+  let iconElement = document.querySelector("#icon img");
   if (now.getHours() >= 7 && now.getHours() < 18) {
     // Day Mode
     body.classList.remove("night-mode");
     body.classList.add("day-mode");
+    iconElement.src =
+      "https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png";
   } else {
     // Night Mode
     body.classList.remove("day-mode");
     body.classList.add("night-mode");
+    iconElement.src =
+      "https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png";
   }
 }
 
